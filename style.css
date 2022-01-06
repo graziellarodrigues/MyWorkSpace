@@ -1,0 +1,352 @@
+#container {
+    width: 1650px;
+    background-color: #ffffff;
+    margin: auto;
+    border-radius: 15px;
+    text-align: justify;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0.144, 0.144);
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 18px;
+    background-color: rgb(226, 235, 245);
+}
+
+temperatura {
+    width: 20px;
+    padding: 10px;
+    margin-left: 330px;
+    float: right;
+}
+
+input#clima {
+    width: 230px;
+    margin-top: 20px;
+    margin-right: 10px;
+}
+
+header {
+    display: inline-flex;
+    margin-left: 30px;
+    width: auto;
+    margin-bottom: 20px;
+}
+
+h1 {
+    padding: 10px;
+    color: rgba(15, 15, 15, 0.774);
+}
+
+#tarefas>h1 {
+    color: #A6036D;
+}
+
+.conversor>h2 {
+    color: #03178C;
+}
+
+h3 {
+    color: #21BF48;
+}
+
+label[for=news] {
+    color: #D96523;
+}
+
+.saudacao {
+    float: left;
+    padding: 50px;
+}
+
+
+/*cor da fonte da temperatura*/
+
+nav {
+    margin-left: 990px;
+    color: rgba(15, 15, 15, 0.774);
+}
+
+nav>h1 {
+    margin: 30px;
+}
+
+
+/*CALENDÁRIO*/
+
+
+/*.group after {
+    content: "";
+    display: table;
+    clear: both;
+}
+*/
+
+a {
+    text-decoration: none;
+}
+
+.calendario {
+    padding: 10px;
+    width: 50%;
+    float: right;
+    background-color: #ffffff;
+    box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.144);
+    border-radius: 15px;
+    text-align: center;
+    position: relative;
+    top: 38px;
+}
+
+table {
+    clear: both;
+    width: 100%;
+}
+
+td {
+    height: 50px;
+    text-align: center;
+    vertical-align: middle;
+    width: 100% / 7;
+}
+
+td.hoje {
+    font-weight: 700;
+    font-size: 1.5em;
+}
+
+thead td {
+    border: none;
+    text-transform: uppercase;
+    font-size: 1.5em;
+}
+
+#btnPrev {
+    float: left;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+#btnPrev before {
+    content: '\f104';
+    padding-right: 4px;
+}
+
+#btnNext {
+    padding: 10px;
+    float: right;
+    margin-bottom: 10px;
+}
+
+#btnNext after {
+    content: '\f105';
+    padding-left: 4px;
+}
+
+#btnPrev,
+#btnNext {
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 1em;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+    height: 35px;
+}
+
+#btnPrev,
+#btnNext hover {
+    font-weight: bold;
+}
+
+
+/* TAREFAS*/
+
+#tarefas {
+    margin: auto;
+    padding: 10px;
+    padding-bottom: 30px;
+    width: 46%;
+    float: left;
+    background-color: #ffffff;
+    box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.144);
+    border-radius: 15px;
+    position: relative;
+    top: 38px;
+    text-align: center;
+}
+
+.checked {
+    text-decoration: dotted;
+    width: 60%;
+    float: right;
+}
+
+#fieldset {
+    width: 600px;
+    background-color: #ffffff;
+    margin: auto;
+    text-align: justify;
+}
+
+button,
+label,
+legend {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 1.2rem;
+    border: 0;
+    border-radius: 5px;
+    outline: none;
+    height: 35px;
+}
+
+button:hover {
+    box-shadow: 0px 0px 15px #F2DA91;
+    cursor: pointer;
+}
+
+input {
+    width: 530px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 18px;
+    border: 0;
+    border-bottom: 2px solid #ccc;
+    outline: none;
+    box-sizing: border-box;
+}
+
+.conversor {
+    padding: 10px;
+    width: 50%;
+    float: right;
+    background-color: #ffffff;
+    box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.144);
+    border-radius: 15px;
+    position: relative;
+    top: 68px;
+    text-align: center;
+}
+
+.input {
+    width: 53%;
+    font-size: 1.5rem;
+    padding: 1px;
+    margin-bottom: 1px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+}
+
+.radio {
+    border: 1px solid #ccc;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    width: 5%;
+    height: 18px;
+    display: inline;
+}
+
+.res {
+    max-width: 480px;
+    margin-top: 10px;
+    margin-left: 175px;
+    border: 2px solid #eee;
+    border-radius: 3px;
+    padding: 0 0.625rem 0.625rem;
+    background: #fff;
+}
+
+.res p {
+    margin-top: 1.5rem;
+    font-size: 18px;
+}
+
+#aviso {
+    padding: 3px;
+    color: #191919;
+    font-size: 18px;
+}
+
+#btnConverter,
+#btnLimpar {
+    font-size: 1.2rem;
+    border: 0;
+    border-radius: 5px;
+    outline: none;
+    cursor: pointer;
+    height: 35px;
+}
+
+#btnLimpar {
+    cursor: pointer;
+}
+
+#btnConverter:hover,
+#btnLimpar:hover {
+    box-shadow: 0px 0px 15px#F2DA91;
+}
+
+.procurarNoticias {
+    padding: 10px;
+    width: 46%;
+    float: left;
+    background-color: #ffffff;
+    box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.144);
+    border-radius: 15px;
+    position: relative;
+    top: 98px;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.procurarNoticias>label {
+    font-size: 26px;
+}
+
+.envianoticia {
+    font-size: 1.2rem;
+    border: 0;
+    border-radius: 5px;
+    outline: none;
+    cursor: pointer;
+    height: 40px;
+    display: inline;
+    margin-top: 20px;
+    width: 12%;
+}
+
+.envianoticia:hover {
+    box-shadow: 0px 0px 15px #F2DA91;
+}
+
+.lembrete {
+    padding: 10px;
+    padding-bottom: 30px;
+    width: 46%;
+    float: left;
+    background-color: #ffffff;
+    box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.144);
+    border-radius: 15px;
+    position: relative;
+    top: 68px;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.lembrete>button {
+    font-size: 1.2rem;
+    border: 0;
+    border-radius: 5px;
+    outline: none;
+    cursor: pointer;
+    width: 20%;
+    height: 35px;
+    display: block;
+    margin-top: 20px;
+    margin-left: 300px;
+}
+
+.lembrete>button:hover {
+    box-shadow: 0px 0px 15px #F2DA91;
+}

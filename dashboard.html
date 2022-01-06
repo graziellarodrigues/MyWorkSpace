@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyWorkSpace</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="imagens/favicon.png">
+
+</head>
+
+<body onload="geoUser()">
+    <div id="container">
+
+        <header>
+
+            <div id=" saudacao ">
+                <h1>Olá, User</h1>
+            </div>
+            <nav>
+                <div id="temperatura">
+                    <h1 class="city"></h1>
+                    <h2> 🌡 <span id="temp"></span> °C </span>
+                    </h2>
+                </div>
+
+            </nav>
+        </header>
+
+        <section>
+            <div id="tarefas">
+                <h1>Minhas tarefas</h1>
+                <form name="form_main">
+                    <label for="task"> </label>
+                    <input type="text" placeholder=" Digite uma tarefa" name="task" id="task" autofocus />
+                    <button type="button" onclick="add()">Adicionar</button>
+                </form>
+                <br>
+                <fieldset id="fieldset">
+                    <legend>Tarefas:</legend>
+                    <ul> </ul>
+                </fieldset>
+            </div>
+            <div class="calendario">
+                <button id="btnPrev" type="button">Prev</button>
+                <button id="btnNext" type="button">Next</button>
+                <div id="divCal"></div>
+            </div>
+
+            <div class="lembrete">
+                <h3>Lembretes</h3>
+                <input type="date" id="dataEvento" />
+                <input type="text" placeholder="HH:mm" id="horaEvento" />
+                <input type="text" id="descEvento" />
+                <button type="button" onclick="novoAlerta()">Criar alerta</button>
+            </div>
+
+            <div class="conversor">
+                <h2>Conversor de Moedas</h2>
+                <section class='conteudos'>
+                    <div class='form-group'>
+                        <label for="valorEmReal">R$</label>
+                        <input type="number" name="valorEmReal" id="valorEmReal" class='input' step='0.01' min='0.00' max='9999999999.99' value='' tabindex="1" onClick='ativarBotao()' onChange='ativarBotao()' autofocus required />
+                    </div>
+
+                    <div class="form-group">
+                        <input type="radio" id='dolar' name="moedaEstrangeira" class="input radio" value='Dólar' tabindex="2" /><label for="dolar">Dólar</label>
+                        <input type="radio" id='euro' name="moedaEstrangeira" class="input radio" value='Euro' tabindex="3" /> <label for="euro">Euro</label>
+                        <input type="radio" id='libra' name="moedaEstrangeira" class="input radio" value='Libra' tabindex="4" /> <label for="libra">Libra</label>
+                        <input type="radio" id='bitcoins' name="moedaEstrangeira" class="input radio" value='Bitcoins' tabindex="5" /> <label for="bitcoins">Bitcoins</label>
+                    </div>
+                    <div class="form-group">
+                        <button id='btnConverter'>Converter</button>
+                        <button type="reset" class='botao' id='btnLimpar' tabindex="7">Limpar</button>
+                    </div>
+                    <div class="res">
+                        <p class='centro' id='aviso'>Digite o valor, escolha a moeda e clique em converter!</p>
+                    </div>
+
+            </div>
+            <div>
+                <form action="" class="procurarNoticias">
+                    <label for="news"><strong>Notícias</strong></label><br>
+                    <input type="text" class="inputxt" />
+                    <input type="submit" class="envianoticia" />
+
+                    <p class=" containernoticia ">
+                        <ul class="noticialista "> </ul>
+                    </p>
+                </form>
+            </div>
+            </section>
+
+            <script src="script.js "></script>
+    </div>
+
+</body>
+
+</html>
