@@ -246,11 +246,11 @@ let aviso = document.querySelector('#aviso')
 let btnConverter = document.querySelector('#btnConverter')
 let btnLimpar = document.querySelector('#btnLimpar')
 
-// COTACOES DO DIA 06/01/2022 
-let valorDoDolar = 5.71
-let valorDoEuro = 6.47
-let valorDaLibra = 7.74
-let valorDoBitcoin = 244560.20
+// COTACOES DO DIA 10/01/2022 
+let valorDoDolar = 5.68
+let valorDoEuro = 6.42
+let valorDaLibra = 7.69
+let valorDoBitcoin = 225788.49
 let valorEmReal = 0
 
 let moedaEstrangeira = ''
